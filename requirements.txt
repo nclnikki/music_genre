@@ -2,3 +2,4 @@ tensorflow==2.18.0
 numpy== 1.26.4
 librosa==0.10.1
 streamlit
+matplotlib==3.7.2

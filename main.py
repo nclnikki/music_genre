@@ -9,14 +9,14 @@ from tensorflow.image import resize
 #Function
 @st.cache_resource()
 def load_model():
-  model = tf.keras.models.load_model("Trained_model.h5")
+  model = tf.keras.models.load_model("Trained_model (1).h5")
   return model
 
 
 
 
 # Load and preprocess audio data
-def load_and_preprocess_data(file_path, target_shape=(150, 150)):
+def load_and_preprocess_data(file_path, target_shape=(210, 210)):
     data = []
     audio_data, sample_rate = librosa.load(file_path, sr=None)
     # Perform preprocessing (e.g., convert to Mel spectrogram and resize)
